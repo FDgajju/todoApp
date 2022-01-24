@@ -1,0 +1,10 @@
+.tileRow,
+.tileColumn {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.tileRow1 {
+    display: flex;
+}

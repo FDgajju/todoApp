@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(87, 86, 86);
+  color: #555;
+  font-family: "Lato", "Arial", "sans-sarif";
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  /* background-image:  linear-gradient(rgba(255, 38, 38, 0.747), rgba(255, 255, 58, 0.568), rgba(60, 60, 247, 0.61)); */
+}
+
+
+.counterCss {
+  /* background-color: #FFB344; */
+  background-image: linear-gradient(#FFB344, #555);
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  /* align-items: */
+  width: 80%;
+  margin-top: auto;
+  height: 100vh;
+  padding-top: 5px;
+  padding-bottom: 2%;
+    /* box-shadow: 0 2px 20px #000; */
+    overflow: hidden;
+  }
+
+/* .dltContainer, */
+.container {
+  background-color: #f05945;
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  border: solid 0px #6F69AC;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px #382200;
+  margin-top: 5%;
+}
+
+/* .dltContainer {
+  background-color: #4AA96C;
+} */
+
+h1 {
+  color: #f05945;
+  background-color: #35858b;
+  border-left: 10px solid #f05945;
+  border-right: 10px solid #f05945;
+  margin-bottom: 1%;
+  text-shadow: 0 1px 2px #194042;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  font-size: 200%;
+}
+
+h2 {
+  font-family: "Cascadia Code";
+  font-weight:normal;
+  font-size: 25px;
+  color: #35858b;
+  /* box-shadow: 0 2px 2px #9c3224; */
+  text-shadow: 0 1px 2px #9c3224;
+
+}
+
+
+#addNew {
+  text-transform:capitalize;
+  overflow: hidden;
+  /* max-width: 50%; */
+  text-shadow: 0 2px 2px#976c2c;
+}
+
+.border,
+.btnContainer {
+  color: #fff;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #FFB344;
+  /* box-shadow: 0 2px 2px #9c3224; */
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #ad4133  ;
+  flex: none;
+}
+
+.border {
+  background-color: #555;
+  border-bottom: 1px solid #9FE6A0  ;
+}
+
+.abc{
+  margin-top: 10%;
+}
+
+
+#complete {
+  overflow: hidden;
+  position: absolute;
+  right: 8%;
+  width: 20%;
+  padding: 3px;
+  border-radius: 5px;
+  border: 0px solid #555;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #FFB344;
+  background-color: #6F69AC;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  /* box-shadow: 0 2px 5px #a37837; */
+
+}
+
+#complete:hover,
+#complete:active {
+  background-color: #5c56a0;
+  color: #d1d1d1;
+  box-shadow: 0 2px 5px #a37837;
+  text-shadow: 0 2px 2px #302d57;
+
+}
+
+#y,
+#x {
+  overflow: hidden;
+  position: absolute;
+  right: 2%;
+  width: 5%;
+  padding: 3px;
+  border-radius: 5px;
+  border: 0px solid #555;
+  font-weight: bold;
+  background-color: #FF1700;
+  transition: ease-in 0.2s;
+  color: #FFB344;
+  /* box-shadow: 0 2px 5px #a37837; */
+}
+
+#y {
+  background-color: rgba(85, 85, 85, 0);
+  color: #d1d1d1;
+  position: absolute;
+  right: 1%;
+  padding: 1%;
+}
+
+#y:hover,
+#y:active {
+  background-color: rgb(68, 68, 68);
+  color: #d1d1d1;
+  box-shadow:  0 2px 5px rgb(65, 65, 65);
+}
+
+#x:hover,
+#x:active {
+  background-color: #a12121;
+  color: #d1d1d1;
+  box-shadow: 0 2px 5px #a37837;
+}
+
+.input {
+  display: flex;
+  /* flex-direction: column; */
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  /* margin-bottom: 10px; */
+}
+
+#editTask,
+#DoneTask,
+#undoTask {
+  padding: 3px;
+  width: 5%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 0px solid #000;
+  transition: background-color 0.3s;
+  /* box-shadow: 0 2px 5px #a37837; */
+}
+
+#editTask {
+  position: absolute;
+  right: 29%;
+  background-color: #f15333;
+  color: #FFB344;
+}
+
+#editTask:hover,
+#editTask:active{
+  background-color: #b6412a;
+  color: #d1d1d1;
+  box-shadow: 0 2px 5px #a37837;
+
+}
+
+#DoneTask,
+#undoTask {
+  position: absolute;
+  right: 35%;
+  background-color: #5684ce;
+  color: #FFB344;
+}
+
+#undoTask:hover,
+#undoTask:active,
+#DoneTask:hover,
+#DoneTask:active {
+  background-color: #324b74;
+  color: #d1d1d1;
+  box-shadow: 0 2px 5px #a37837;
+
+}
+
+.hD,
+#taskDone{
+  margin-top: 2%;
+  font-size: 20px;
+  color: #35858b;
+  text-shadow: 0 2px 2px #9c3224;
+  font-family: "Cascadia Code"
+}
+
+.hD {
+  color: #555;
+  text-shadow: 0 2px 2px #1e4b2e;
+}
+
+.trs,
+.addButton{
+  text-align: center;
+  margin: auto;
+  font-family: "Cascadia Code";
+  padding: 1%;
+  width: 10%;
+  /* margin: auto; */
+  border: 2px solid #d1d1d1;
+  border-radius: 5px;
+  color: #d1d1d1;
+  background-color:#f05945;
+  /* background-color: #35858b; */
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  /* margin-left: 5px; */
+  letter-spacing: 3px;
+  transition: background-color 0.3s;
+  font-size: 100%;
+}
+
+.addButton:hover,
+.addButton:active {
+  background-color: #d1d1d1;
+  color: #f15333;
+  box-shadow: 0px 5px 10px #832c1a;
+}
+
+.allDlt {
+  background-color: rgba(85, 85, 85, 0);
+  border: 0px solid #d1d1d1;
+  color: #555;
+  text-align: center;
+  margin: auto;
+  font-family: "Cascadia Code";
+  padding: 1%;
+  width: 10%;
+  /* margin: auto; */
+  border-radius: 5px;
+  /* background-color: #35858b; */
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  /* margin-left: 5px; */
+  letter-spacing: 3px;
+  transition: background-color 0.3s;
+  font-size: 100%;
+}
+
+.allDlt:hover, 
+.allDlt:active {
+  /* background-color: #ffb444; */
+  background-image: linear-gradient(#ffb4448a, rgba(85, 85, 85, 0));
+  /* box-shadow: 0px 5px 10px #297245; */
+  color: #d1d1d1;
+}
+
+.undu,
+.center1 {
+  font-family: "Cascadia Code";
+  padding: 1%;
+  width: 12%;
+  /* margin: auto; */
+  border: 0px solid #555;
+  border-radius: 5px;
+  color: #f15333;
+  background-color: #35858b;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  margin-left: 5px;
+  letter-spacing: 3px;
+  transition: background-color 0.3s;
+  /* font-size: 100%; */
+}
+
+.undu {
+  color: #d1d1d1;
+  position: absolute;
+  right: 8%;
+  /* margin-bottom: 3px; */
+  background-color: #555;
+}
+
+.center1:hover,
+.center1:active{
+  background-color: #2a6569;
+  color: #d1d1d1;
+  box-shadow:  0 2px 5px #9c3224;
+}
+
+.undu:hover,
+.undu:active {
+  background-color: rgb(68, 68, 68);
+  color: #d1d1d1;
+  box-shadow:  0 2px 5px rgb(65, 65, 65);
+}
+
+#toDoListCss {
+  color: #000;
+  background-color: #d1d1d1;
+  width: 80%;
+  height: 5vh;
+  border: 0px solid #555;
+  border-radius: 5px;
+}
