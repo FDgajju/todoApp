@@ -13,7 +13,7 @@ function App() {
 
     // <Button/>
     <ToDoList/>
-    <ChessBoard/>
+   // <ChessBoard/>
 
   )
 }
